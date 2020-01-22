@@ -1,7 +1,4 @@
-var canvas = document.getElementById("canvas_div");
-var ctx = canvas.getContext("2d", { alpha: true });
-
-(function (qc) {
+function (qc) {
     function ic () { }
     function r () { }
     function p (a) {
