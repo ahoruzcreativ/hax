@@ -7,7 +7,50 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
-    <div><div class="game-view" tabindex="-1"><div class="top-section" data-hook="gameplay-section"><div class="game-state-view"><div class="bar-container"><div class="bar"><div class="scoreboard"><div class="teamicon red"></div><div class="score" data-hook="red-score">0</div><div>-</div><div class="score" data-hook="blue-score">0</div><div class="teamicon blue"></div></div><div class="game-timer-view"><span class="overtime">OVERTIME!</span><span class="digit">0</span><span class="digit">0</span><span class="null">:</span><span class="digit">0</span><span class="digit">0</span></div></div></div><canvas width="300" height="480"></canvas></div></div><div class="bottom-section"><div class="stats-view"><p>Ping: <span data-hook="ping"></span></p><p>Max Ping: <span data-hook="max-ping"></span></p><p>Fps: <span data-hook="fps">64</span></p><div class="graph"><canvas width="32" height="64"></canvas></div></div><div class="chatbox-view"><div data-hook="log" class="log ps"><p>Controls:<br>Move: WASD or Arrows<br>Kick: X, Space, Ctrl, Shift, Numpad 0<br>View: Numbers 1 to 4</p><div class="ps__rail-x" style="left: 0px; top: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><p class="notice">Game started by Alawi</p></div><div class="autocompletebox" data-hook="autocompletebox" hidden=""></div><div class="input"><input data-hook="input" type="text" maxlength="140"><button data-hook="send">Send</button></div></div><div class="buttons"><button data-hook="menu"><i class="icon-menu"></i>Menu<span class="tooltip">Toggle room menu [Escape]</span></button><button data-hook="settings"><i class="icon-cog"></i>Settings</button></div></div><div data-hook="popups" style="display: none;"></div></div></div>
+    <div>
+        <div class="game-view" tabindex="-1">
+            <div class="top-section" data-hook="gameplay-section">
+                <div class="game-state-view">
+                    <div class="bar-container">
+                        <div class="bar">
+                            <div class="scoreboard">
+                                <div class="teamicon red"></div>
+                                <div class="score" data-hook="red-score">0</div>
+                                <div>-
+                                </div>
+                                <div class="score" data-hook="blue-score">0</div>
+                                <div class="teamicon blue"></div>
+                            </div><div class="game-timer-view"><span class="overtime">OVERTIME!</span><span class="digit">0</span><span class="digit">0</span><span class="null">:</span><span class="digit">0</span><span class="digit">0</span></div>
+                        </div>
+                    </div>
+                    <canvas width="300" height="480"></canvas>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="stats-view"><p>Ping: <span data-hook="ping"></span></p><p>Max Ping: <span data-hook="max-ping"></span></p><p>Fps: <span data-hook="fps">64</span></p>
+                    <div class="graph"><canvas width="32" height="64"></canvas>
+                    </div>
+                </div>
+                <div class="chatbox-view">
+                    <div data-hook="log" class="log ps"><p>Controls:<br>Move: WASD or Arrows<br>Kick: X, Space, Ctrl, Shift, Numpad 0<br>View: Numbers 1 to 4</p>
+                        <div class="ps__rail-x" style="left: 0px; top: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;">
+                            </div>
+                        </div>
+                        <div class="ps__rail-y" style="top: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;">
+                            </div>
+                        </div>
+                        <p class="notice">Game started by Alawi</p></div><div class="autocompletebox" data-hook="autocompletebox" hidden="">
+                    </div>
+                    <div class="input"><input data-hook="input" type="text" maxlength="140"><button data-hook="send">Send</button>
+                    </div>
+                </div>
+                <div class="buttons"><button data-hook="menu"><i class="icon-menu"></i>Menu<span class="tooltip">Toggle room menu [Escape]</span></button><button data-hook="settings"><i class="icon-cog"></i>Settings</button>
+                </div>
+            </div>
+            <div data-hook="popups" style="display: none;">
+            </div>
+        </div>
+        </div>
         <canvas id="canvas_div"></canvas>
         <script src="script.js"></script>
         <script src="game-min-dev.js"></script>
